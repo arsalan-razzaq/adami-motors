@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 810" role="img" aria-labelledby="title description">
+  <title id="title">Adami Motors vehicle image placeholder</title>
+  <desc id="description">A neutral vehicle silhouette on an Adami Motors branded background.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f7f7"/>
+      <stop offset="1" stop-color="#e5e5e5"/>
+    </linearGradient>
+    <linearGradient id="car" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#252525"/>
+      <stop offset="1" stop-color="#080808"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="810" fill="url(#background)"/>
+  <path d="M0 645 360 285h240L240 645Z" fill="#d71920" opacity=".07"/>
+  <path d="M1200 165 840 525H600l360-360Z" fill="#080808" opacity=".04"/>
+  <g transform="translate(170 255)">
+    <path d="M105 260 180 118c14-27 41-44 72-44h350c32 0 61 18 75 47l66 139 74 25c24 8 40 31 40 56v72H42v-72c0-27 17-50 42-58Z" fill="url(#car)"/>
+    <path d="m230 118-57 139h526l-62-139c-7-15-22-25-39-25H269c-17 0-32 10-39 25Z" fill="#9da4aa"/>
+    <path d="M277 108h145v132H222Zm168 0h145l55 132H445Z" fill="#cbd0d4" opacity=".82"/>
+    <rect x="68" y="292" width="720" height="93" rx="28" fill="#161616"/>
+    <rect x="109" y="309" width="105" height="28" rx="14" fill="#fff" opacity=".88"/>
+    <rect x="640" y="309" width="105" height="28" rx="14" fill="#fff" opacity=".88"/>
+    <circle cx="208" cy="413" r="69" fill="#080808"/>
+    <circle cx="208" cy="413" r="34" fill="#777"/>
+    <circle cx="666" cy="413" r="69" fill="#080808"/>
+    <circle cx="666" cy="413" r="34" fill="#777"/>
+  </g>
+  <text x="600" y="730" text-anchor="middle" fill="#d71920" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="7">ADAMI MOTORS</text>
+</svg>

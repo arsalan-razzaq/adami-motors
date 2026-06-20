@@ -9,7 +9,7 @@ export const contact = {
 export const makers = ['Audi','Bentley','BMW','Bugatti','Chevrolet','Dodge','Ferrari','Ford','Honda','Hyundai','Jaguar','Jeep','Kia','Lamborghini','Land Rover','Lexus','Mazda','McLaren','Mercedes-Benz','Mitsubishi','Nissan','Peugeot','Porsche','Rolls-Royce','Suzuki','Tesla','Toyota','Volkswagen','Volvo']
 export const types = ['Bus','Commuter','Coupe','Crew Cab','Double Cab','Dumper','Hatchback','Jeep','Mini Bus','Mini Truck','Mini Van','MPV','Pick Up','Pickup Truck','Sedan','Single Cab','Smart Cab','Sports','SUV','Tractor','Truck','Van','Wagon']
 
-const inventory = [
+const legacyInventory = [
  ['Toyota','Hilux Travo','Double Cab',2025,36000,12000,'Automatic','Diesel','White'],
  ['Toyota','Hiace','Van',2024,56000,18000,'Automatic','Diesel','Pearl White'],
  ['Toyota','Commuter','Commuter',2019,36500,68000,'Automatic','Diesel','Silver'],
@@ -63,7 +63,7 @@ const featureGroups = {
   Miscellaneous:['One Owner','Non-Smoker','Spare Tire','Jack','Wheel Spanner'],
 }
 
-export const vehicles = inventory.map((v,i) => ({
+const legacyVehicles = legacyInventory.map((v,i) => ({
   id:i+1, slug:`${v[0]}-${v[1]}-${v[3]}-${i+1}`.toLowerCase().replaceAll(' ','-').replaceAll('.',''),
   maker:v[0], model:v[1], title:`${v[0]} ${v[1]}`, type:v[2], year:v[3], price:v[4], currency:'USD',
   mileage:v[5], engine:i%3===0?'2.8L':'2.4L', transmission:v[6], fuelType:v[7], color:v[8], steering:'Right',
@@ -72,6 +72,8 @@ export const vehicles = inventory.map((v,i) => ({
   description:`A carefully selected ${v[3]} ${v[0]} ${v[1]} available from Bangkok with inspection and worldwide shipping support.`,
   images:[image(i),image(i+2),image(i+4)], features:featureGroups, createdAt:`2026-${String((i%6)+1).padStart(2,'0')}-${String((i%25)+1).padStart(2,'0')}`,
 }))
+
+export const vehicles = csvVehicles
 
 export const services = [
  ['Car','Vehicle Sales & Procurement','Buy, sell, or source high-quality cars, including specialized Thai vehicles. We offer a diverse inventory to meet every preference and budget.'],
@@ -96,3 +98,4 @@ export const staff = [
 
 export const money = n => new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n)
 export const km = n => `${new Intl.NumberFormat('en-US').format(n)} km`
+import { vehicles as csvVehicles } from './data/vehicles'
