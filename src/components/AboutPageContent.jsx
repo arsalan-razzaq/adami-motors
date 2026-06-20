@@ -74,8 +74,8 @@ export function AboutPageContent() {
         <p className="mx-auto mt-5 max-w-2xl text-center leading-7 text-[#666]">Meet the leadership team building trusted automotive connections between Thailand and the world.</p>
         <div className="mx-auto mt-12 grid max-w-7xl gap-7 lg:grid-cols-2">
           {founders.map((founder, index) => (
-            <article key={founder.name} className="group grid min-h-[390px] overflow-hidden rounded-2xl border border-black/[.07] bg-white shadow-[0_12px_35px_rgba(0,0,0,.06)] transition duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-[0_22px_48px_rgba(0,0,0,.11)] sm:grid-cols-[minmax(210px,42%)_1fr]">
-              <div className="relative h-80 overflow-hidden bg-[#e8e8e8] sm:h-full">
+            <article key={founder.name} className="group grid overflow-hidden rounded-2xl border border-black/[.07] bg-white shadow-[0_12px_35px_rgba(0,0,0,.06)] transition duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-[0_22px_48px_rgba(0,0,0,.11)] sm:min-h-[390px] sm:grid-cols-[minmax(190px,42%)_1fr]">
+              <div className="relative h-72 overflow-hidden bg-[#e8e8e8] min-[430px]:h-80 sm:h-full">
                 <Img src={founder.image} alt={founder.name} className={`h-full w-full object-cover ${founder.imagePosition} transition duration-500 group-hover:scale-[1.025]`} />
                 <span className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent sm:hidden" aria-hidden="true" />
                 <span className="absolute left-5 top-5 grid h-9 min-w-9 place-items-center rounded-full bg-[#D71920] px-2 text-xs font-bold text-white shadow-lg" aria-hidden="true">
@@ -83,7 +83,7 @@ export function AboutPageContent() {
                 </span>
               </div>
 
-              <div className="relative flex min-w-0 flex-col p-7 sm:p-8">
+              <div className="relative flex min-w-0 flex-col p-5 min-[430px]:p-7 sm:p-8">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#999]">Leadership Team</p>
                   <h3 className="mt-3 text-2xl font-semibold uppercase leading-snug text-[#111]">{founder.name}</h3>

@@ -31,12 +31,12 @@ export function AboutSection() {
       <div className="container-site grid items-center gap-12 lg:grid-cols-2">
         <div className="relative">
           <Img
-            src="https://images.unsplash.com/photo-1562141961-b5d5f2b24142?auto=format&fit=crop&w=1200&q=85"
-            alt="Adami Motors vehicle showroom"
-            className="h-[520px] w-full rounded-xl object-cover"
+            src="/images/about/ab.jpg"
+            alt="About Adami Motors"
+            className="h-auto w-full rounded-xl"
           />
-          <div className="absolute bottom-5 right-5 rounded-lg bg-[#D71920] p-6 text-white">
-            <b className="block text-4xl font-display">15</b>
+          <div className="absolute bottom-3 right-3 rounded-lg bg-[#D71920] p-4 text-white sm:bottom-5 sm:right-5 sm:p-6">
+            <b className="block text-3xl font-display sm:text-4xl">15</b>
             Years Experience
           </div>
         </div>

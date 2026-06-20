@@ -9,13 +9,13 @@ const SEO=({title,description,schema})=>{useEffect(()=>{document.title=title;let
 export function Home(){
  return <><SEO title="Adami Motors | Vehicle Sales, Customization & Global Shipping Thailand" description="Buy, source, customize, service and export quality vehicles from Bangkok, Thailand."/>
  <section className="home-hero relative">
-   <div className="container-site relative z-10 flex min-h-[590px] items-center pb-28 pt-14">
-     <div className="max-w-[590px]">
+   <div className="container-site relative z-10 flex min-h-[590px] items-center pb-24 pt-12 sm:pb-28 sm:pt-14">
+     <div className="w-full max-w-[590px]">
        <p className="mb-4 text-sm font-bold uppercase tracking-[.08em]"><span className="text-[#D71920]">Find.</span> Buy. Drive.</p>
-       <h1 className="text-5xl font-bold uppercase leading-[1.02] sm:text-6xl xl:text-7xl">Find Your<br/><span className="text-[#D71920]">Perfect Car</span></h1>
+       <h1 className="text-4xl font-bold uppercase leading-[1.02] min-[390px]:text-5xl sm:text-6xl xl:text-7xl">Find Your<br/><span className="text-[#D71920]">Perfect Car</span></h1>
        <p className="mt-5 max-w-md text-base leading-7 text-[#606060]">Thousands of verified cars. Best prices.<br className="hidden sm:block"/> Trusted deals from Thailand to the world.</p>
-       <div className="mt-9 grid max-w-[600px] gap-5 sm:grid-cols-3">
-         {[[ShieldCheck,'100% Verified','All cars are inspected and verified'],[Award,'Best Price Guarantee','We ensure you get the best deal'],[Headphones,'24/7 Customer Support','We are here to help you anytime']].map(([I,t,d])=><div className="flex gap-3" key={t}><span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border border-red-200 text-[#D71920]"><I size={21}/></span><span><b className="block text-xs">{t}</b><small className="mt-1 block text-[10px] leading-4 text-[#777]">{d}</small></span></div>)}
+       <div className="mt-8 grid max-w-[520px] gap-3 md:grid-cols-3">
+         {[[ShieldCheck,'100% Verified','Inspected and verified'],[Award,'Best Price Guarantee','Competitive, transparent deals'],[Headphones,'24/7 Customer Support','Help whenever you need it']].map(([I,t,d])=><div className="flex min-w-0 items-center gap-3 rounded-lg border border-white/80 bg-white/80 p-3 shadow-[0_8px_24px_rgba(0,0,0,.06)] backdrop-blur-sm" key={t}><span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-red-200 bg-white text-[#D71920]"><I size={19}/></span><span className="min-w-0"><b className="block text-[11px] leading-4">{t}</b><small className="mt-0.5 block text-[9px] leading-[1.35] text-[#666]">{d}</small></span></div>)}
        </div>
      </div>
    </div>

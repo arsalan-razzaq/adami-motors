@@ -1,6 +1,11 @@
-node_modules/
-dist/
-.vite/
-vite.log
-.env
-.env.local
+node_modules/ 
+dist/ 
+.env 
+.env.local 
+.vscode/ 
+.chrome-responsive-1/ 
+chrome-profile-2/ 
+edge-debug-profile/ 
+edge-responsive-profile/ 
+responsive-*.png 
+responsive-*.log 

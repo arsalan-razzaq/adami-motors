@@ -20,7 +20,7 @@ export function Newsletter() {
       <form onSubmit={submit} className="container-site flex flex-col items-center gap-5 lg:flex-row">
         <Mail size={36} />
         <div className="mr-auto"><h2 className="text-2xl uppercase">Subscribe to Our Newsletter</h2><p className="text-sm text-white/75">New arrivals, services and export updates from Bangkok.</p></div>
-        <div className="w-full max-w-xl"><div className="flex"><input value={email} onChange={event => setEmail(event.target.value)} className="min-w-0 flex-1 rounded-l-md bg-white px-4 text-black" placeholder="Your email address" aria-label="Email address" /><button className="rounded-r-md bg-black px-6 py-3 font-bold uppercase">Subscribe</button></div>{message && <p className="mt-1 text-xs">{message}</p>}</div>
+        <div className="w-full max-w-xl"><div className="flex flex-col gap-2 min-[430px]:flex-row min-[430px]:gap-0"><input value={email} onChange={event => setEmail(event.target.value)} className="min-h-12 min-w-0 flex-1 rounded-md bg-white px-4 text-black min-[430px]:rounded-r-none" placeholder="Your email address" aria-label="Email address" /><button className="min-h-12 rounded-md bg-black px-6 py-3 font-bold uppercase min-[430px]:rounded-l-none">Subscribe</button></div>{message && <p className="mt-1 text-xs">{message}</p>}</div>
       </form>
     </section>
   )
